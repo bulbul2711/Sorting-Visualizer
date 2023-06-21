@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-3 mb-2 bg-dark text-white">
+    <header>
+        <h1 align="center">SORTING VISUALIZER</h1>
+        <nav>
+            <div class="row">
+                <div class="col gap-2 d-sm-flex" id="newArray">
+                    <button type="button" class="newArray">New Array</button>
+                </div>
+                <div class="col" id="input">
+                    <span id="size">Size
+                        <input id="arr_sz" type="range" min="5" max="100" step="1" value="60">
+                    </span>
+                    <span id="speed">Speed
+                        <input id="speed_input" type="range" min="20" max="300" step="10" value="60">
+                    </span>
+                </div>
+                <div class="col gap-2 d-sm-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-primary btn-dark bubbleSort">Bubble Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-dark selectionSort">Selection Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-dark insertionSort">Insertion Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
+                    <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="bars" class="flex-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="sorting.js"></script>
+    <script src="bubble.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+    <script src="selection.js"></script>
+</body>
+</html>
